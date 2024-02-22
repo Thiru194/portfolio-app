@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portfolioo-app/static/css/main.31dd3cdd.css",
+    "main.js": "/portfolioo-app/static/js/main.acf548a6.js",
+    "static/js/787.3f009c1a.chunk.js": "/portfolioo-app/static/js/787.3f009c1a.chunk.js",
+    "static/media/service-1.svg": "/portfolioo-app/static/media/service-1.cf1ed095ef4b3f923356075cee1bc398.svg",
+    "static/media/avatar-2.svg": "/portfolioo-app/static/media/avatar-2.dbaf15ff9b5d68a39d1b24521fb12640.svg",
+    "static/media/avatar-1.svg": "/portfolioo-app/static/media/avatar-1.e18c937d0a33154687422e5da407f480.svg",
+    "static/media/service-3.svg": "/portfolioo-app/static/media/service-3.a324186e2cfcc11f1ad1ea2c0a4ffa55.svg",
+    "static/media/service-2.svg": "/portfolioo-app/static/media/service-2.5c151f1353d4629154fbf0e537115128.svg",
+    "static/media/dots-bg.svg": "/portfolioo-app/static/media/dots-bg.aa8289c51cd678b8cd47.svg",
+    "index.html": "/portfolioo-app/index.html",
+    "main.31dd3cdd.css.map": "/portfolioo-app/static/css/main.31dd3cdd.css.map",
+    "main.acf548a6.js.map": "/portfolioo-app/static/js/main.acf548a6.js.map",
+    "787.3f009c1a.chunk.js.map": "/portfolioo-app/static/js/787.3f009c1a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31dd3cdd.css",
+    "static/js/main.acf548a6.js"
+  ]
+}
