@@ -6,7 +6,7 @@ import Image from "../../assets/avatar-2.svg";
 
 const About = () => {
   const handleDownload = () => {
-    const fileName = 'Resume1.pdf';
+    const fileName = '717821F258-Thiruselvan S.pdf';
     const fileUrl = `${process.env.PUBLIC_URL}/Res/${fileName}`;
     
     const link = document.createElement('a');
