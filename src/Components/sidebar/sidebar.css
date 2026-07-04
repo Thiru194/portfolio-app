@@ -3,7 +3,7 @@
     left: 0;
     top: 0;
     background: var(--body-color);
-    border-right:1px  solid rgba(0,0,0,0.05);
+    border-right:1px  solid var(--border-color);
     padding: 2.5rem;
     width: 110px;
     min-height: 100vh;
@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: space-between;
     z-index: 10;
+    backdrop-filter: blur(6px);
 }
 
 .nav_list{
@@ -18,14 +19,91 @@
     flex-direction: column;
     row-gap: 1rem;
 }
+.nav_item{
+    display: flex;
+    justify-content: center;
+}
 .nav_link{
     font-size: 1.5rem;
     color: var(--title-color);
     font-weight: var(--font-bold);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    transition: color .3s, background-color .3s, transform .3s;
+}
+.nav_link:hover{
+    color: var(--first-color);
+    background-color: rgba(255,76,96,0.10);
+    transform: translateY(-3px);
+}
+.nav_link.active-link{
+    color: #fff;
+    background-color: var(--first-color);
+    box-shadow: 0 6px 16px rgba(255,76,96,0.35);
 }
 .copyright{
     color: hsl(245,15%,65%);
     font-size: var(--small-font-size);
     transform: rotate(-180deg);
     writing-mode: vertical-rl;
+}
+
+.theme_toggle{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    font-size: 1.35rem;
+    color: var(--title-color);
+    background-color: var(--container-color);
+    box-shadow: var(--shadow);
+    transition: color .3s, transform .3s, background-color .3s;
+}
+.theme_toggle:hover{
+    color: var(--first-color);
+    transform: translateY(-3px) rotate(-15deg);
+}
+
+/* Tablet and below: turn the aside into a fixed bottom navigation bar */
+@media screen and (max-width: 768px){
+    .aside{
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        min-height: auto;
+        padding: 0.6rem 1rem;
+        flex-direction: row;
+        justify-content: center;
+        border-right: none;
+        border-top: 1px solid rgba(0,0,0,0.06);
+        box-shadow: 0 -4px 20px rgb(69 67 96 / 12%);
+    }
+    .nav_list{
+        flex-direction: row;
+        column-gap: 0.75rem;
+        row-gap: 0;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 420px;
+    }
+    .nav_link{
+        font-size: 1.35rem;
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .nav_link{
+        font-size: 1.15rem;
+        width: 2.25rem;
+        height: 2.25rem;
+    }
 }

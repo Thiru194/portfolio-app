@@ -1,6 +1,14 @@
 .about_container{
     grid-template-columns: 3fr 9fr;
     column-gap: 1.875rem;
+    align-items: center;
+}
+.about_img{
+    border-radius: var(--border-radius);
+    transition: transform .4s ease;
+}
+.about_img:hover{
+    transform: translateY(-6px);
 }
 .about_data{
     padding: 1.875rem;
@@ -80,4 +88,33 @@
 }
 .about_title{
     font-size: 1.875rem;
+}
+
+/* Responsive: stack image above the info card, hide the side pointer */
+@media screen and (max-width: 768px){
+    .about_container{
+        grid-template-columns: 1fr;
+        row-gap: 1.875rem;
+        justify-items: center;
+    }
+    .about_img{
+        width: 60%;
+        max-width: 260px;
+    }
+    .about_data::before{
+        display: none;
+    }
+    .about_boxes{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .about_boxes{
+        grid-template-columns: 1fr;
+    }
+    .about_data{
+        padding: 1.5rem;
+    }
 }

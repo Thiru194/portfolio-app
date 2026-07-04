@@ -12,11 +12,46 @@
 
 .home_img{
     margin-bottom: 1.5rem;
+    width: 220px;
+    max-width: 60vw;
+    animation: home-float 4s ease-in-out infinite;
+    filter: drop-shadow(0 15px 25px rgba(69,67,96,0.18));
+}
+@keyframes home-float{
+    0%, 100%{ transform: translateY(0); }
+    50%{ transform: translateY(-14px); }
 }
 .home_name{
     font-size: var(--h1-font-size);
     font-weight: var(--font-bold);
     margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, var(--first-color), hsl(280,70%,60%), var(--first-color));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: name-shine 5s linear infinite;
+}
+@keyframes name-shine{
+    to{ background-position: 200% center; }
+}
+.home_education{
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.7em;
+}
+.home_cursor{
+    display: inline-block;
+    margin-left: 2px;
+    color: var(--first-color);
+    font-weight: var(--font-bold);
+    animation: cursor-blink 1s step-end infinite;
+}
+@keyframes cursor-blink{
+    50%{ opacity: 0; }
 }
 .home_socials{
     display:flex;
@@ -26,10 +61,13 @@
 .home_social-link{
     color: var(--title-color);
     font-size:  1.5rem;
-    transition: .3s;
+    transition: color .3s, transform .3s;
+    display: inline-flex;
+    align-items: center;
 }
 .home_social-link:hover{
- color:hsl(43,100%,68%)
+ color: var(--first-color);
+ transform: translateY(-4px) scale(1.12);
 }
 .scroll_down{
     position: absolute;

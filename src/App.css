@@ -2,4 +2,10 @@
   margin-left: 110px;
 }
 
-
+/* Tablet and below: sidebar becomes a bottom bar, remove the left offset */
+@media screen and (max-width: 768px){
+  .main{
+    margin-left: 0;
+    padding-bottom: 5rem; /* space for the fixed bottom nav */
+  }
+}

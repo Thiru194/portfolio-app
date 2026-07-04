@@ -8,6 +8,11 @@
     border-radius: var(--border-radius);
     position: relative;
     box-shadow: var(--shadow);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+.timeline:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 30px rgb(69 67 96 / 16%);
 }
 .timeline_item{
     position: relative;
@@ -42,4 +47,12 @@
 .timeline_title{
     font-size: var(--h3-font-size);
     margin: 0.5rem 0;
+}
+
+/* Responsive: stack the two timelines */
+@media screen and (max-width: 768px){
+    .resume_container{
+        grid-template-columns: 1fr;
+        row-gap: 1.875rem;
+    }
 }

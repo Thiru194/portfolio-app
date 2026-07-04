@@ -99,6 +99,24 @@
     width: 280px;
 }
 
+/* Dark theme overrides */
+:root[data-theme="dark"] .contact_card{
+    background: linear-gradient(145deg, hsl(244,22%,18%), hsl(244,22%,14%));
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+:root[data-theme="dark"] .contact_card::before{
+    background: rgba(255,76,96,0.10);
+}
+:root[data-theme="dark"] .contact_card-title{
+    color: var(--title-color);
+}
+:root[data-theme="dark"] .contact_card-data{
+    color: var(--text-color);
+}
+:root[data-theme="dark"] .contact_card:hover{
+    box-shadow: 0 12px 30px rgba(0,0,0,0.55);
+}
+
 @media screen and (max-width: 768px){
 
     .contact_content{
