@@ -6,7 +6,7 @@ const HeaderSocials = () => {
     <div className="home_socials">
 
       <Link
-        to="https://www.linkedin.com/in/thiruselvan"
+        to="https://www.linkedin.com/in/thiruselvan-s"
         className="home_social-link linkedin"
         target="_blank"
         rel="noopener noreferrer"

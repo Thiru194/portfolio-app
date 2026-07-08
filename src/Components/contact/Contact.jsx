@@ -59,22 +59,18 @@ const Contact = () => {
         {/* Bottom Center Cards */}
         <div className="contact_socials">
 
-          <div className="contact_card social_card">
+          <a
+            href="https://www.linkedin.com/in/thiruselvan-s/"
+            target="_blank"
+            rel="noreferrer"
+            className="contact_card social_card"
+          >
             <i className="fa-brands fa-linkedin contact_card-icon"></i>
 
             <h3 className="contact_card-title">
               LinkedIn
             </h3>
-
-            <a
-              href="https://www.linkedin.com/in/thiruselvan-s/"
-              target="_blank"
-              rel="noreferrer"
-              className="contact_card-data"
-            >
-              linkedin.com/in/thiruselvan
-            </a>
-          </div>
+          </a>
 
           <div className="contact_card social_card">
             <i className="fa-brands fa-github contact_card-icon"></i>
