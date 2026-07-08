@@ -67,7 +67,7 @@ const Contact = () => {
             </h3>
 
             <a
-              href="https://linkedin.com/in/thiruselvan"
+              href="https://www.linkedin.com/in/thiruselvan-s/"
               target="_blank"
               rel="noreferrer"
               className="contact_card-data"
