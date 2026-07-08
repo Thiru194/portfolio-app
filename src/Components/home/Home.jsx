@@ -49,6 +49,11 @@ const Home = () => {
   return (
     <Router>
       <section className="home container" id="home">
+        <div className="home_blobs" aria-hidden="true">
+          <span className="blob blob-1"></span>
+          <span className="blob blob-2"></span>
+          <span className="blob blob-3"></span>
+        </div>
         <div className="intro">
           <img src={Me} alt="" className="home_img" />
 

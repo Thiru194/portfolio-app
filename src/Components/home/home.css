@@ -4,10 +4,60 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .intro{
     max-width: 540px;
     text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Decorative animated glow blobs behind the hero */
+.home_blobs{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+.blob{
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(70px);
+    opacity: 0.35;
+}
+.blob-1{
+    width: 320px;
+    height: 320px;
+    background: var(--first-color);
+    top: -60px;
+    left: -40px;
+    animation: blob-move 15s ease-in-out infinite;
+}
+.blob-2{
+    width: 280px;
+    height: 280px;
+    background: hsl(280,70%,65%);
+    bottom: -70px;
+    right: -30px;
+    animation: blob-move 19s ease-in-out infinite reverse;
+}
+.blob-3{
+    width: 220px;
+    height: 220px;
+    background: hsl(43,100%,68%);
+    top: 45%;
+    left: 60%;
+    animation: blob-move 17s ease-in-out infinite;
+}
+@keyframes blob-move{
+    0%, 100%{ transform: translate(0, 0) scale(1); }
+    33%{ transform: translate(30px, -25px) scale(1.1); }
+    66%{ transform: translate(-25px, 20px) scale(0.95); }
+}
+:root[data-theme="dark"] .blob{
+    opacity: 0.28;
 }
 
 .home_img{

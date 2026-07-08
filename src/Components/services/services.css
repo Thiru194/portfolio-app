@@ -58,6 +58,34 @@
 .services_card:nth-child(2) .services_description{
     color: var(--title-color);
 }
+.services_tags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+}
+.services_tag{
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+    color: #fff;
+    background: rgba(255,255,255,0.22);
+    padding: 0.35rem 0.75rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(2px);
+    transition: background .3s ease, transform .3s ease;
+}
+.services_tag:hover{
+    transform: translateY(-2px);
+    background: rgba(255,255,255,0.35);
+}
+.services_card:nth-child(2) .services_tag{
+    color: var(--title-color);
+    background: rgba(69,67,96,0.14);
+}
+.services_card:nth-child(2) .services_tag:hover{
+    background: rgba(69,67,96,0.24);
+}
 
 /* Responsive layout */
 @media screen and (max-width: 992px){

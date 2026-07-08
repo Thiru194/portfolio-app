@@ -57,6 +57,25 @@ const About = () => {
 
       </div>
 
+      <div className="about_stats grid">
+        <div className="about_stat">
+          <h3 className="about_stat-number">1300<span>+</span></h3>
+          <span className="about_stat-label">Skillrack Problems</span>
+        </div>
+        <div className="about_stat">
+          <h3 className="about_stat-number">250<span>+</span></h3>
+          <span className="about_stat-label">LeetCode Solved</span>
+        </div>
+        <div className="about_stat">
+          <h3 className="about_stat-number">130<span>+</span></h3>
+          <span className="about_stat-label">CodeChef Challenges</span>
+        </div>
+        <div className="about_stat">
+          <h3 className="about_stat-number">4<span>+</span></h3>
+          <span className="about_stat-label">Projects Built</span>
+        </div>
+      </div>
+
     </section>
   );
 };

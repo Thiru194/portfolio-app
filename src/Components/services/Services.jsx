@@ -8,6 +8,7 @@ const data = [
     title: "Frontend Development",
     description:
       "Experienced in building responsive web applications using HTML5, CSS3, Bootstrap, JavaScript, and React.js.",
+    tags: ["React.js", "JavaScript", "HTML5", "CSS3", "Bootstrap"],
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const data = [
     title: "Backend Development",
     description:
       "Skilled in Node.js, Express.js, REST API integration, Axios, MongoDB, and Oracle database management.",
+    tags: ["Node.js", "Express.js", "MongoDB", "REST API", "Oracle"],
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const data = [
     title: "Problem Solving",
     description:
       "Solved 1300+ Skillrack problems, 250+ LeetCode problems, and 130+ CodeChef challenges focused on DSA and logical thinking.",
+    tags: ["DSA", "Java", "LeetCode", "CodeChef", "Skillrack"],
   },
 ];
 
@@ -31,13 +34,13 @@ const Services = () => {
       <h2 className="section_title">Technical Skills</h2>
 
       <div className="services_container grid">
-        {data.map(({ id, image, title, description }) => {
+        {data.map(({ id, image, title, description, tags }) => {
           return (
             <div className="services_card" key={id}>
-              
-              <img 
-                src={image} 
-                alt={title} 
+
+              <img
+                src={image}
+                alt={title}
                 className="services_img"
               />
 
@@ -48,6 +51,12 @@ const Services = () => {
               <p className="services_description">
                 {description}
               </p>
+
+              <div className="services_tags">
+                {tags.map((tag) => (
+                  <span className="services_tag" key={tag}>{tag}</span>
+                ))}
+              </div>
 
             </div>
           );

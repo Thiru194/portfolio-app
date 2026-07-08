@@ -138,6 +138,16 @@ img{
        top:-0.875rem;
 
 }
+.section_title::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.9rem;
+  width: 56px;
+  height: 4px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--first-color), hsl(280,70%,60%));
+}
 .btn{
   padding:0.85rem 1.75rem;
   line-height: 1;
