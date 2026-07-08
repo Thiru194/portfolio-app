@@ -72,22 +72,18 @@ const Contact = () => {
             </h3>
           </a>
 
-          <div className="contact_card social_card">
+          <a
+            href="https://github.com/Thiru194"
+            target="_blank"
+            rel="noreferrer"
+            className="contact_card social_card"
+          >
             <i className="fa-brands fa-github contact_card-icon"></i>
 
             <h3 className="contact_card-title">
               GitHub
             </h3>
-
-            <a
-              href="https://github.com/Thiru194"
-              target="_blank"
-              rel="noreferrer"
-              className="contact_card-data"
-            >
-              github.com/Thiru194
-            </a>
-          </div>
+          </a>
 
         </div>
 
